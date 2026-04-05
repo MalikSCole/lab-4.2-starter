@@ -19,3 +19,21 @@ p {
     margin-left: 15px;
     background-color: lightblue;
 }
+
+.pages-nav {
+    display: flex;          /* makes items horizontal */
+    gap: 10px;              /* space between tabs */
+    list-style: none;       /* removes bullets */
+    padding: 0;
+}
+
+.pages-nav li {
+    display: inline;
+}
+
+.pages-nav a {
+       margin-top: 10px;
+    margin-left: 15px;
+    background-color: lightblue;
+}
+

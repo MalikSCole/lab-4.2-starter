@@ -28,8 +28,14 @@
     <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
     <!-- <div class="content"> -->
     <div>
-        {% block content %}{{ page_content }}{% endblock %}
+        
+        
+        {% block content %}{{ page_content }}{% if page_name != "Wiki Index" %}
+    <a href="{{ url_for('all_pages') }}">← Back to Pages</a>
+{% endif %}<img src="{{ url_for('images', image='random-cat-skiing') }}">{% endblock %}
+        
     </div>
+    
 
 </body>
 
